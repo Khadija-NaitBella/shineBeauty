@@ -1,42 +1,45 @@
-body{
-    background-image: url(Design\ sans\ titre.png);
+body {
+    background-color: #F9F9F9;
     margin: 10;
     padding-bottom: 100px;
 }
-.nav img {
-    height:20px;
+
+.img {
+    height: 90px;
     width: auto;
 }
 
-.navbar{
-    background-color: rgb(198, 145, 145);
-    padding: 190x;
+.navbar {
+    background-color:#B76E79;
+    padding: 150x;
     overflow: hidden;
+
+}
+
+.contient-nav {
+    display:flex;         
+    justify-content:flex-end;        
+    gap: 15px   ;         
+    margin-left:auto;     
+
+}
+.contient-nav a {
+    text-decoration:none;
+    color: #d4b773;
+    margin: 0 10px; 
+    font-weight:bold;
     
 }
-.contient-nav {
-    display: flex;           /* Active le mode flexbox */
-    justify-content: flex-end; /* Aligne les liens à droite */
-    gap: 15px;               /* Espacement entre les liens */
-    margin-left: auto;       /* Pousse le div à droite */
-}
 
-.contient-nav a {
+
+.nav a {
+    color: rgb(24, 24, 23);
     text-decoration: none;
-    color: white;            /* Couleur du texte */
-    margin: 0 10px;          /* Espacement interne autour des liens */
-    font-weight: bold;       /* Texte en gras */
-}
-
-
-.nav a{
-    color:bisque;
-    text-decoration:none;
     margin: 0 300;
     font-weight: bold;
-    float:right;
-}  
-    
+    float: right;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -51,9 +54,9 @@ h1 {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #f5c3c3;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -65,10 +68,11 @@ label {
     margin-bottom: 5px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #f9f9f9;
     border-radius: 5px;
 }
 
@@ -80,7 +84,7 @@ input, textarea {
 
 button[type="submit"] {
     background-color: #333;
-    color: white;
+    color: rgb(19, 18, 18);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -91,3 +95,84 @@ button[type="submit"]:hover {
     background-color: #444;
 }
 
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+.product-card {
+    max-width: 2000px;
+    margin: 0 auto;
+    background-color: #E1C4A3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.product-image {
+    width: 100%;
+    height: 411px;
+    object-fit: contain;
+
+}
+
+.product-info {
+    padding: 30px;
+}
+
+h2 {
+    color: #b76e79;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.features {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.additional-info {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background-color: #474644;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #E1C4A3;
+}
+
+@media screen and (max-width: 600px) {
+    .product-card {
+        flex-direction: column;
+    }
+
+    .product-image {
+        height: auto;
+    }
+}
