@@ -1,0 +1,101 @@
+body{
+    background-image: url(Design\ sans\ titre.png);
+    margin: 10;
+    padding-bottom: 100px;
+}
+.nav img {
+    height:20px;
+    width: auto;
+}
+
+.navbar{
+    background-color: rgb(198, 145, 145);
+    padding: 190x;
+    overflow: hidden;
+    
+}
+.contient-nav {
+    display: flex;           /* Active le mode flexbox */
+    justify-content: flex-end; /* Aligne les liens à droite */
+    gap: 15px;               /* Espacement entre les liens */
+    margin-left: auto;       /* Pousse le div à droite */
+}
+
+.contient-nav a {
+    text-decoration: none;
+    color: white;            /* Couleur du texte */
+    margin: 0 10px;          /* Espacement interne autour des liens */
+    font-weight: bold;       /* Texte en gras */
+}
+
+
+.nav a{
+    color:bisque;
+    text-decoration:none;
+    margin: 0 300;
+    font-weight: bold;
+    float:right;
+}  
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#orderForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #444;
+}
+
+
+.information {
+width:max-content;
+color :white;
+
+
+
+}

@@ -1,60 +1,138 @@
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
+<!DOCTYPE html>
+<html lang="en">
+</head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShineBeauty</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <title>ShineBeauty - Vente en ligne</title>
+    <link rel="stylesheet" href="projet.css"> 
+     
+    <script src="script.js"></script>
+    </head>
 
-<body>
-    <header>
+    <body>
+        <header>
+    <!-- navbar -->
+    <div class="navbar">
+        <nav>
+        
+            <img src="S (1).png" alt="ShineBeauty" height="100"   width="100">    
+         <div class="contient-nav">
+         
+            
+            <a href="/home">Accueil</a> 
+         
+          <a href="/products">Produits</a> 
+          
+          
+           <a href="/contact">Contact</a> 
+         
+           </div>
+        </nav> 
+    </div>
 
-    </header>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
     <main>
-
-        <form action="Formulaire "> Formulaire de commande:
+      <div class="information">
+        <form action="Formulaire "> Formulaire de commande: <br>
             <div>
                 <label for="nom">Nom :</label>
-                <input type="text" id="Nom" name="Nom" required>
+                <input type="text" id="Nom" name="Nom" placeholder="Entrer votre nom" required>
                 <br>
             </div>
             <div>
                 <label for="prénom">Prénom :</label>
-                <input type="text" id="Prénom" name="Prénom" required><br>
+                <input type="text" id="Prénom" name="Prénom" placeholder="Entrer votre prénom" required><br>
             </div>
             <div>
                 <label for="Email">Email:</label>
-                <input type="email" id="Email" name="Email" required><br>
+                <input type="email" id="Email" name="Email"  placeholder="Entrer votre Email" required><br>
             </div>
             <div>
                 <label for="Adress">Adress :</label>
-                <input type="text" id="Adress" required><br>
+                <input type="text" id="Adress" placeholder="Entrer votre Adress " required><br>
             </div>
             <div>
                 <label for="tel">Numéro de téléphone :</label>
-                <input type="tel" id="Nombre" required><br>
+                <input type="tel" id="tel" name="tel" placeholder="Entrer votre numéro"  required><br>
             </div>
             <div>
                 <label for="Quantité">Quantité :</label>
-                <input type="number" id="Quantité" required><br>
+                <input type="number" id="Quantité" placeholder="Entrer votre Quantité" required><br>
 
             </div>
             <div>
                 <label for="total"> Total de la commande :</label>
                 <input type="number">
-            </div>
+            </div><br>
             <button type="submit">Valider la commande</button>
         </form>
+        
+
+        <h2>Tableau des Commandes Passées</h2>
+        <table>
+            
+                <tr>
+                    <th>Nom et Prénom</th>
+                    <th>Email</th>
+                    <th>Adresse</th>
+                    <th>Numéro de Téléphone</th>
+                    <th>Quantité Commandée</th>
+                    <th>Total de la Commande (€)</th>
+                </tr>
+            </thead>
+            <tbody id="order-table-body">
+                <!-- Les lignes de commandes s'afficheront ici -->
+            </tbody>
+        </table>
+    </div>
+
+
     </main>
 
     <footer>
 
     </footer>
 
-    <script src="app.js"></script>
+    
+    
 </body>
-
 </html>
+
