@@ -1,46 +1,59 @@
-body{
-    background-image: url(Design\ sans\ titre.png);
-    margin: 10;
-    padding-bottom: 100px;
-}
-.nav img {
-    height:20px;
-    width: auto;
+@media screen and (max-width: 600px) {
+    .product-card {
+        flex-direction: column;
+    }
+
+    .product-image {
+        height: auto;
+    }
 }
 
-.navbar{
-    background-color: rgb(198, 145, 145);
-    padding: 190x;
-    overflow: hidden;
-    
+body {
+    background-color: #F9F9F9;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
+
+.navbar {
+    width: 100%;
+    background-color: #B76E79;
+    overflow: hidden;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: 100px;
+    width: 200px;
+}
+
 .contient-nav {
-    display: flex;           /* Active le mode flexbox */
-    justify-content: flex-end; /* Aligne les liens à droite */
-    gap: 15px;               /* Espacement entre les liens */
-    margin-left: auto;       /* Pousse le div à droite */
+    display: flex;
+    padding: 15px;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
 .contient-nav a {
     text-decoration: none;
-    color: white;            /* Couleur du texte */
-    margin: 0 10px;          /* Espacement interne autour des liens */
-    font-weight: bold;       /* Texte en gras */
+    color: #d4b773;
+    margin: 0 10 px; 
+    font-weight:bolder;
 }
 
 
-.nav a{
-    color:bisque;
-    text-decoration:none;
+.nav a {
+    color: rgb(24, 24, 23);
+    text-decoration: none;
     margin: 0 300;
     font-weight: bold;
     float:right;
-}  
-    
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
 }
+
+
 
 h1 {
     color: #333;
@@ -51,9 +64,9 @@ h1 {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #f5c3c3;
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -65,10 +78,11 @@ label {
     margin-bottom: 5px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #f9f9f9;
     border-radius: 5px;
 }
 
@@ -80,7 +94,7 @@ input, textarea {
 
 button[type="submit"] {
     background-color: #333;
-    color: white;
+    color: rgb(19, 18, 18);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -91,11 +105,150 @@ button[type="submit"]:hover {
     background-color: #444;
 }
 
-
-.information {
-width:max-content;
-color :white;
-
-
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
 }
+
+.product-card {
+    max-width: 2000px;
+    margin: 0 auto;
+    background-color: #E1C4A3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 411px;
+    object-fit: contain;
+}
+
+.product-info {
+    padding: 30px;
+}
+
+h2 {
+    color: #b76e79;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.features {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.additional-info {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background-color: #B76E79;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #E1C4A3;
+}
+
+form {
+    padding: 30px;
+    /* border-radius: 16px; */
+    color: black;
+    text-align: left;
+    width: 500px;
+    border-style:none;
+    background-color: #B76E79;
+}
+
+h3 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.btn-valid {
+    background-color: white !important;
+    color: black !important;
+    /* Ajoute une couleur de texte lisible */
+    padding: 10px !important;
+    /* Ajoute de l'espace interne au bouton */
+    border: none !important;
+    /* Supprime les bordures par défaut */
+    border-radius: 5px !important;
+    /* Coins arrondis */
+    font-size: 16px !important;
+    /* Taille de la police */
+    cursor:pointer!important;
+    /* Changement du curseur au survol */
+    margin: 15px;
+}
+
+.annuler {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.boutton{
+    gap:10px;
+    align-items: left;
+}
+.d-flex{
+    display: flex;
+    gap:10px 
+}
+.image{
+    width: 98%;
+    height: auto;
+    /* border-radius: 16px; */
+    border-style:none;
+}
+h1 {
+    text-align: center;
+    color: #555;
+  }
+  
+  table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #B76E79;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
