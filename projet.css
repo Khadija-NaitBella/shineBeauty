@@ -1,7 +1,10 @@
 body {
     background-color: #F9F9F9;
     margin: 10;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+
 }
 
 .img {
@@ -37,13 +40,9 @@ body {
     text-decoration: none;
     margin: 0 300;
     font-weight: bold;
-    float: right;
+    float: right; container-name: ;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
 
 h1 {
     color: #333;
@@ -102,17 +101,11 @@ button[type="submit"]:hover {
 
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f0f0f0;
-}
 
 .product-card {
     max-width: 2000px;
     margin: 0 auto;
     background-color: #E1C4A3;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
@@ -158,7 +151,7 @@ h2 {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 9px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -176,3 +169,31 @@ h2 {
         height: auto;
     }
 }
+
+
+
+footer {
+    background-color: #8c7373;
+    color: rgb(80, 17, 33);
+    text-align: center;
+    padding: 20px 0;
+}
+
+a{
+    color:rgb(80, 17, 33); 
+    margin: 0 5px; 
+    text-shadow: 2px 2px 4px rgb(206, 197, 197);
+}
+
+footer a {
+    color: rgb(80, 17, 33);
+    margin: 0 20px;
+    text-decoration: none;
+}
+img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    padding: 0px;
+}
+
