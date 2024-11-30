@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-</head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ShineBeauty - Vente en ligne</title>
-<link rel="stylesheet" href="projet.css">
+<html lang="fr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShineBeauty - Vente en ligne</title>
+    <link rel="stylesheet" href="projet.css">
 </head>
 
 <body>
@@ -22,114 +22,112 @@
         </div>
     </header>
     <main>
+        <!-- Premier article -->
         <div class="product-card">
-            <img src="image.png" alt="Image du Rouge à levre" class="product-image">
-
+            <img src="image shine beauty.webp" alt="Image du Rouge à lèvre" class="product-image">
             <div class="product-info">
-                <h2>Rouge à levre naturel</h2>
-                <p class="Rouge à Lèvres Intense et Hydratant - 'Rose Éclatant' ">
-                    Offrez à vos lèvres une touche de couleur éclatante et un soin nourrissant avec notre Rouge à Lèvres
-                    Hydratant. Sa formule innovante allie hydratation intense et couleur longue tenue, pour des lèvres
-                    douces, lisses et sublimées toute la journée. Enrichi en huiles nourrissantes et en vitamine E, ce
-                    rouge à lèvres prend soin de vos lèvres tout en apportant un fini brillant et lumineux.</p>
-
+                <h2>Rouge à lèvre naturel</h2>
+                <p class="description">
+                    Offrez à vos lèvres une touche de couleur éclatante et un soin nourrissant avec notre Rouge à Lèvres Hydratant. Sa formule innovante allie hydratation intense et couleur longue tenue, pour des lèvres douces, lisses et sublimées toute la journée.
+                </p>
                 <ul class="features">
                     <li>Longue tenue jusqu'à 12 heures</li>
                     <li>Adapté à tous les types de peau</li>
                     <li>Formule hydratante</li>
-                    <li>Finis naturel et mat</li>
+                    <li>Fini naturel et mat</li>
                 </ul>
-
                 <p><strong>Taille :</strong> 30ml</p>
-                <p><strong>Ingrédients principaux :</strong> Eau, Glycerine, Dimethicone</p>
-                <p><strong>Prix :</strong> 150 DH</p>
-                <p><strong>Disponibilité :</strong> En stock</p>
+                <p><strong>Prix :</strong> <span class="prixUnitaire">150</span> DH</p>
                 <button class="buy-button">Acheter</button>
             </div>
         </div>
-        <br>
-        <div class="product-card">
-            <img src="image shine beauty.webp" alt="Image du Rouge à levre" class="product-image">
-            <div class="product-info">
-                <h2>Rouge à levre naturel</h2>
-                <p class="Rouge à Lèvres Intense et Hydratant" - Rouge Éclatant>
-                    Découvrez l'élégance à chaque application avec ce rouge à lèvres au fini parfait. Sa texture
-                    crémeuse glisse facilement sur vos lèvres, offrant une couleur intense et longue tenue. Infusé avec
-                    des ingrédients hydratants, il prévient le dessèchement pour des lèvres douces et confortables toute
-                    la journée. Ce rouge à lèvres est disponible dans une palette de teintes vibrantes, adaptées à
-                    toutes les occasions, du quotidien aux soirées glamour. Offrez à vos lèvres un éclat irrésistible et
-                    une touche de sophistication."</p>
 
+        <!-- Deuxième article -->
+        <div class="product-card">
+            <img src="image.png" alt="Image du Rouge à lèvre" class="product-image">
+            <div class="product-info">
+                <h2>Rouge à lèvre intense</h2>
+                <p class="description">
+                    Découvrez l'élégance à chaque application avec ce rouge à lèvres au fini parfait. Sa texture crémeuse glisse facilement sur vos lèvres, offrant une couleur intense et longue tenue.
+                </p>
                 <ul class="features">
                     <li>Longue tenue jusqu'à 12 heures</li>
                     <li>Adapté à tous les types de peau</li>
                     <li>Formule hydratante</li>
-                    <li>Finis naturel et mat</li>
+                    <li>Fini naturel et mat</li>
                 </ul>
                 <p><strong>Taille :</strong> 30ml</p>
-                <p><strong>Ingrédients principaux :</strong> Eau, Glycerine, Dimethicone</p>
-                <p><strong>Prix :</strong> 155 DH</p>
-                <p><strong>Disponibilité :</strong> En stock</p>
+                <p><strong>Prix :</strong> <span class="prixUnitaire">150</span> DH</p>
                 <button class="buy-button">Acheter</button>
             </div>
         </div>
+
         <br>
-    <div class="d-flex">    
-        <div>
-        <form class="group">
-            <p><strong>veuillez saisir vos informations :</strong></p>
-            <label for="nom">Nom :</label>
-            <input type="text" id="Nom" name="Nom" placeholder="Entrer votre nom" required>
-            
-            <label for="prénom">Prénom :</label>
-            <input type="text" id="Prénom" name="Prénom" placeholder="Entrer votre prénom" required><br>
 
-            <label for="Email">Email:</label>
-            <input type="email" id="Email" name="Email" placeholder="Entrer votre Email" required><br>
-
-            <label for="Adress">Adress :</label>
-            <input type="text" id="Adress" placeholder="Entrer votre Adress " required><br>
-
-            <label for="codePostal">Code Postal :</label>
-            <input type="text" id="codePostal" placeholder="Entrer votre code postal " required><br>
-
-            <label for="tel">Numéro de téléphone :</label>
-            <input type="number" id="tel" name="tel" placeholder="Entrer votre numéro" required><br>
-
-            <label for="Quantité">Quantité :</label>
-            <input type="number" id="Quantité" placeholder="Entrer votre Quantité" required><br>
-
-            <label for="total"> Total de la commande </label>
-            <input type="number">
-            
-            <div class="boutton">
-                <button class="btn-valid" type="submit">Valider la commande</button>
-                <button class="annuler" type="reset"> Annuler la commande </button>
+        <div class="d-flex">
+            <!-- Formulaire -->
+            <div>
+                <form id="commandeForm" class="group">
+                    <p><strong>Veuillez saisir vos informations :</strong></p>
+                    <label for="Nom">Nom :</label>
+                    <input type="text" id="Nom" placeholder="Entrer votre nom" required>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" placeholder="Entrer votre prénom" required><br>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" placeholder="Entrer votre Email" required><br>
+                    <label for="Adress">Adresse :</label>
+                    <input type="text" id="Adress" placeholder="Entrer votre adresse " required><br>
+                    <label for="codePostal">Code Postal :</label>
+                    <input type="text" id="codePostal" maxlength="5" placeholder="Entrer votre code postal " required><br>
+                    <label for="tele">Numéro de téléphone :</label>
+                    <input type="text" id="tele" maxlength="10" placeholder="Entrer votre numéro" required><br>
+                    <label for="quantite">Quantité :</label>
+                    <input type="number" id="quantite" value="1" min="1" required><br>
+                    <p><strong>Total :</strong> <span id="totaldisplay">0</span></p>
+                    <div class="boutton">
+                        <button class="btn-valid" type="submit" id="boutt">Valider la commande</button>
+                        <button class="annuler" type="reset">Annuler la commande</button>
+                    </div>
+                </form>
             </div>
-        </form>
+
+            <!-- Image à côté du formulaire -->
+            <div>
+                <img class="image"
+                    src="DALL·E 2024-11-29 09.33.36 - A collection of elegant lipsticks with luxurious packaging featuring a sleek 'SB' logo, representing 'Shine Beauty'. The design incorporates a metalli.webp"
+                    alt="image">
+            </div>
         </div>
-        <div>
-            <img class="image" src="DALL·E 2024-11-29 09.33.36 - A collection of elegant lipsticks with luxurious packaging featuring a sleek 'SB' logo, representing 'Shine Beauty'. The design incorporates a metalli.webp" alt="image"> 
-        </div>
-    </div>    
+
+        <!-- Tableau des commandes -->
         <h1>Tableau des Commandes</h1>
-  <table id="ordersTable">
-      <tr>
-        <th>Nom</th>
-        <th>Prénom</th>
-        <th>Email</th>
-        <th>Adress</th>
-        <th>téléphone</th>
-        <th>Quantité</th>
-        <th>Total</th>
-  </table>
+        <table id="ordersTable" border="1">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Email</th>
+                    <th>Adresse</th>
+                    <th>Téléphone</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les lignes des commandes seront ajoutées ici -->
+            </tbody>
+        </table>
     </main>
 
     <footer>
-
+        <p> &copy; 2025 ShineBeauty. Tous droits réservés.</p>
+        <p> Adresse: MASSIRA2, Rue 20, N:8 </p>
+        <a href="/email">Email</a><br>
+        <a href="/Facebook">Facebook</a><br>
+        <a href="/Instagram">Instagram</a><br>
+        <p>Contactez-nous :</p>
+        <p>Téléphone: +212590246781</p>
     </footer>
-
-
     <script src="projet.js"></script>
 </body>
 
